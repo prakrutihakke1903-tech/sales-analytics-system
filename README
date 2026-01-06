@@ -1,0 +1,223 @@
+ Sales Analytics System (Python)
+
+📌 Project Overview
+
+The “Sales Analytics System” is a Python-based data analytics application designed for an e-commerce company to process, clean, analyze, and enrich sales transaction data.
+
+This system demonstrates practical usage of:
+
+* File handling with encoding issues
+* Data cleaning and validation
+* Sales analytics using Python data structures
+* API integration (DummyJSON)
+* Report generation for business decision-making
+* Modular, production-style Python project structure
+
+
+🧠 Key Features
+
+ ✔ Handles non-UTF-8 encoded files
+ ✔ Cleans messy transactional data
+ ✔ Validates records using strict business rules
+ ✔ Performs sales, customer, product, and date-based analysis
+ ✔ Integrates with DummyJSON Products API
+ ✔ Generates comprehensive business reports
+ ✔ Fully modular and reusable codebase
+
+
+📁 Project Structure
+
+sales-analytics-system/
+│
+├── README.md
+├── main.py
+├── requirements.txt
+│
+├── utils/
+│   ├── file_handler.py
+│   ├── data_processor.py
+│   └── api_handler.py
+│
+├── data/
+│   ├── sales_data.txt
+│   └── enriched_sales_data.txt
+│
+└── output/
+    └── sales_report.txt
+
+
+ 📂 Dataset Description
+
+File: `sales_data.txt`
+
+* Format: Pipe-delimited (`|`)
+* Encoding: Non-UTF-8 (latin-1 / cp1252 possible)
+* Records: ~80 total
+* Expected Valid Records: ~70
+* Date Range: December 2024
+
+Sample Record
+
+T002|2024-12-01|P102|Mouse,Wireless|5|500|C002|South
+
+Data Quality Issues Handled
+
+* Commas in product names
+* Commas in numeric values (e.g., `1,500`)
+* Missing or extra fields
+* Invalid quantities and prices
+* Incorrect ID formats
+* Empty lines
+
+
+🧹 Data Cleaning Rules
+
+❌ Removed (Invalid Records)
+
+* Missing `CustomerID` or `Region`
+* Quantity ≤ 0
+* UnitPrice ≤ 0
+* TransactionID not starting with `T`
+* ProductID not starting with `P`
+* CustomerID not starting with `C`
+
+✅ Cleaned & Retained (Valid Records)
+
+* Removed commas from product names
+* Removed commas from numeric fields
+* Converted quantity → `int`
+* Converted price → `float`
+
+🔍 Validation Output
+
+The system prints:
+
+Total records parsed: 80
+Invalid records removed: 10
+Valid records after cleaning: 70
+ 📊 Analytics Performed
+
+✔ Sales Analysis
+
+* Total Revenue
+* Average Order Value
+* Region-wise performance
+* Daily sales trends
+* Peak sales day
+
+✔ Product Analysis
+
+* Top-selling products
+* Low-performing products
+
+✔ Customer Analysis
+
+* Total spending
+* Purchase count
+* Average order value
+* Unique products purchased
+
+🌐 API Integration
+
+API Used
+
+DummyJSON Products API
+
+https://dummyjson.com/products
+
+Enrichment Logic
+
+* Extract numeric ID from `ProductID` (e.g., `P101 → 101`)
+* Match with API product data
+* Append:
+
+  * Category
+  * Brand
+  * Rating
+  * API Match flag
+
+ Enriched Output File
+
+data/enriched_sales_data.txt
+
+ 📝 Report Generation
+
+File: `output/sales_report.txt`
+
+Report Sections
+
+1. Header & metadata
+2. Overall summary
+3. Region-wise performance
+4. Top 5 products
+5. Top 5 customers
+6. Daily sales trend
+7. Product performance analysis
+8. API enrichment summary
+
+✔ Professionally formatted
+✔ Business-ready output
+
+
+▶️ How to Run the Project
+
+1️⃣ Clone Repository
+
+On bash:
+git clone https://github.com/your-username/sales-analytics-system.git
+cd sales-analytics-system
+
+2️⃣ Install Dependencies
+
+On bash:
+pip install -r requirements.txt
+
+
+3️⃣ Run Application
+
+On bash:
+python main.py
+
+
+🖥 Sample Console Output
+========================================
+SALES ANALYTICS SYSTEM
+========================================
+[1/10] Reading sales data...
+✓ Successfully read 80 transactions
+[2/10] Parsing and cleaning data...
+✓ Parsed 80 records
+[3/10] Filter Options Available:
+Regions: North, South, East, West
+Amount Range: ₹500 - ₹90,000
+Do you want to filter data? (y/n): n
+[4/10] Validating transactions...
+✓ Valid: 70 | Invalid: 10
+[5/10] Analyzing sales data...
+✓ Analysis complete
+[6/10] Fetching product data from API...
+✓ Fetched 30 products
+[7/10] Enriching sales data...
+✓ Enriched 65/70 transactions (92.8%)
+[8/10] Saving enriched data...
+✓ Saved to: data/enriched_sales_data.txt
+[9/10] Generating report...
+✓ Report saved to: output/sales_report.txt
+[10/10] Process Complete!
+========================================
+
+📦 requirements.txt
+
+requests
+
+
+🎯 Learning Outcomes
+
+* Practical file handling with encoding challenges
+* Real-world data cleaning strategies
+* Modular Python project design
+* REST API integration
+* Business-focused analytics & reporting
+* Robust error handling
+
+
