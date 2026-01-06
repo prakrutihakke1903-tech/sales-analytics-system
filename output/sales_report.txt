@@ -1,0 +1,66 @@
+=============================================
+SALES ANALYTICS REPORT
+Generated: 2026-01-04 11:52:23.580744
+Records Processed: 17
+=============================================
+
+OVERALL SUMMARY
+---------------------------------------------
+Total Revenue: ₹467,969.00
+Total Transactions: 17
+Average Order Value: ₹27,527.59
+Date Range: 2024-12-02 to 2024-12-30
+
+REGION-WISE PERFORMANCE
+---------------------------------------------
+East       ₹  467,969.00  100.00%  17 txns
+
+TOP 5 PRODUCTS
+---------------------------------------------
+1. Wireless Mouse Gaming Qty: 17  Rev: ₹15,923.00
+2. Webcam               Qty: 16  Rev: ₹47,317.00
+3. Mouse                Qty: 16  Rev: ₹9,048.00
+4. Laptop Charger       Qty: 14  Rev: ₹23,808.00
+5. USB Cable            Qty: 14  Rev: ₹3,145.00
+
+TOP 5 CUSTOMERS
+---------------------------------------------
+1. C023  ₹131,319.00 (1 orders)
+2. C024  ₹99,970.00 (1 orders)
+3. C013  ₹75,325.00 (2 orders)
+4. C004  ₹38,164.00 (2 orders)
+5. C022  ₹37,587.00 (2 orders)
+
+DAILY SALES TREND
+---------------------------------------------
+2024-12-02  ₹99,970.00  1 txns  1 customers
+2024-12-03  ₹35,310.00  4 txns  4 customers
+2024-12-07  ₹46,735.00  3 txns  3 customers
+2024-12-08  ₹65,673.00  1 txns  1 customers
+2024-12-11  ₹13,207.00  2 txns  2 customers
+2024-12-14  ₹11,574.00  1 txns  1 customers
+2024-12-21  ₹25,992.00  1 txns  1 customers
+2024-12-22  ₹6,536.00  1 txns  1 customers
+2024-12-24  ₹5,562.00  1 txns  1 customers
+2024-12-30  ₹157,410.00  2 txns  2 customers
+
+PRODUCT PERFORMANCE
+---------------------------------------------
+Peak Sales Day: 2024-12-30 (₹157,410.00)
+
+API ENRICHMENT SUMMARY
+---------------------------------------------
+Enriched Records: 0/17
+Success Rate: 0.00%
+Products Not Enriched:
+- External Hard Drive
+- Headphones
+- Laptop
+- Laptop Charger
+- Laptop Charger 65W
+- Monitor
+- Monitor LED
+- Mouse
+- USB Cable
+- Webcam
+- Wireless Mouse Gaming
