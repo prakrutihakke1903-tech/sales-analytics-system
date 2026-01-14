@@ -1,36 +1,34 @@
- Sales Analytics System (Python)
 
-📌 Project Overview
+# 📊 Sales Analytics System (Python)
 
-The “Sales Analytics System” is a Python-based data analytics application designed for an e-commerce company to process, clean, analyze, and enrich sales transaction data.
+## 📌 Project Overview
+
+The **Sales Analytics System** is a Python-based data analytics application designed for an e-commerce company to process, clean, analyze, and enrich sales transaction data.
 
 This system demonstrates practical usage of:
 
-```
 * File handling with encoding issues
 * Data cleaning and validation
 * Sales analytics using Python data structures
 * API integration (DummyJSON)
 * Report generation for business decision-making
 * Modular, production-style Python project structure
-```
 
 ---
 
-🧠 Key Features
-```
- ✔ Handles non-UTF-8 encoded files
- ✔ Cleans messy transactional data
- ✔ Validates records using strict business rules
- ✔ Performs sales, customer, product, and date-based analysis
- ✔ Integrates with DummyJSON Products API
- ✔ Generates comprehensive business reports
- ✔ Fully modular and reusable codebase
-```
+## 🧠 Key Features
+
+* ✔ Handles **non-UTF-8 encoded files**
+* ✔ Cleans **messy transactional data**
+* ✔ Validates records using strict business rules
+* ✔ Performs **sales, customer, product, and date-based analysis**
+* ✔ Integrates with **DummyJSON Products API**
+* ✔ Generates **comprehensive business reports**
+* ✔ Fully modular and reusable codebase
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```
 sales-analytics-system/
@@ -51,23 +49,26 @@ sales-analytics-system/
 └── output/
     └── sales_report.txt
 ```
+
 ---
 
- 📂 Dataset Description
+## 📂 Dataset Description
 
-File: `sales_data.txt`
+### File: `sales_data.txt`
 
-* Format: Pipe-delimited (`|`)
-* Encoding: Non-UTF-8 (latin-1 / cp1252 possible)
-* Records: ~80 total
-* Expected Valid Records: ~70
-* Date Range: December 2024
+* **Format:** Pipe-delimited (`|`)
+* **Encoding:** Non-UTF-8 (latin-1 / cp1252 possible)
+* **Records:** ~80 total
+* **Expected Valid Records:** ~70
+* **Date Range:** December 2024
 
-Sample Record
+### Sample Record
 
+```
 T002|2024-12-01|P102|Mouse,Wireless|5|500|C002|South
+```
 
-Data Quality Issues Handled
+### Data Quality Issues Handled
 
 * Commas in product names
 * Commas in numeric values (e.g., `1,500`)
@@ -76,10 +77,11 @@ Data Quality Issues Handled
 * Incorrect ID formats
 * Empty lines
 
+---
 
-🧹 Data Cleaning Rules
+## 🧹 Data Cleaning Rules
 
-❌ Removed (Invalid Records)
+### ❌ Removed (Invalid Records)
 
 * Missing `CustomerID` or `Region`
 * Quantity ≤ 0
@@ -88,23 +90,30 @@ Data Quality Issues Handled
 * ProductID not starting with `P`
 * CustomerID not starting with `C`
 
-✅ Cleaned & Retained (Valid Records)
+### ✅ Cleaned & Retained (Valid Records)
 
 * Removed commas from product names
 * Removed commas from numeric fields
 * Converted quantity → `int`
 * Converted price → `float`
 
-🔍 Validation Output
+---
+
+## 🔍 Validation Output
 
 The system prints:
 
+```
 Total records parsed: 80
 Invalid records removed: 10
 Valid records after cleaning: 70
- 📊 Analytics Performed
+```
 
-✔ Sales Analysis
+---
+
+## 📊 Analytics Performed
+
+### ✔ Sales Analysis
 
 * Total Revenue
 * Average Order Value
@@ -112,27 +121,31 @@ Valid records after cleaning: 70
 * Daily sales trends
 * Peak sales day
 
-✔ Product Analysis
+### ✔ Product Analysis
 
 * Top-selling products
 * Low-performing products
 
-✔ Customer Analysis
+### ✔ Customer Analysis
 
 * Total spending
 * Purchase count
 * Average order value
 * Unique products purchased
 
-🌐 API Integration
+---
 
-API Used
+## 🌐 API Integration
 
-DummyJSON Products API
+### API Used
 
+**DummyJSON Products API**
+
+```
 https://dummyjson.com/products
+```
 
-Enrichment Logic
+### Enrichment Logic
 
 * Extract numeric ID from `ProductID` (e.g., `P101 → 101`)
 * Match with API product data
@@ -143,15 +156,19 @@ Enrichment Logic
   * Rating
   * API Match flag
 
- Enriched Output File
+### Enriched Output File
 
+```
 data/enriched_sales_data.txt
+```
 
- 📝 Report Generation
+---
 
-File: `output/sales_report.txt`
+## 📝 Report Generation
 
-Report Sections
+### File: `output/sales_report.txt`
+
+#### Report Sections
 
 1. Header & metadata
 2. Overall summary
@@ -165,28 +182,34 @@ Report Sections
 ✔ Professionally formatted
 ✔ Business-ready output
 
+---
 
-▶️ How to Run the Project
+## ▶️ How to Run the Project
 
-1️⃣ Clone Repository
+### 1️⃣ Clone Repository
 
-On bash:
+```bash
 git clone https://github.com/your-username/sales-analytics-system.git
 cd sales-analytics-system
+```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 
-On bash:
+```bash
 pip install -r requirements.txt
+```
 
+### 3️⃣ Run Application
 
-3️⃣ Run Application
-
-On bash:
+```bash
 python main.py
+```
 
+---
 
-🖥 Sample Console Output
+## 🖥 Sample Console Output
+
+```
 ========================================
 SALES ANALYTICS SYSTEM
 ========================================
@@ -212,13 +235,19 @@ Do you want to filter data? (y/n): n
 ✓ Report saved to: output/sales_report.txt
 [10/10] Process Complete!
 ========================================
+```
 
-📦 requirements.txt
+---
 
+## 📦 requirements.txt
+
+```
 requests
+```
 
+---
 
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
 * Practical file handling with encoding challenges
 * Real-world data cleaning strategies
@@ -227,4 +256,5 @@ requests
 * Business-focused analytics & reporting
 * Robust error handling
 
+---
 
