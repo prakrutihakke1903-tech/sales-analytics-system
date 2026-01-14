@@ -1,0 +1,18 @@
+TransactionID|Date|ProductID|ProductName|Quantity|UnitPrice|CustomerID|Region|API_Category|API_Brand|API_Rating|API_Match
+T063|2024-12-07|P110|Laptop Charger|6|1916.0|C022|East||||False
+T050|2024-12-02|P104|Monitor LED|10|9997.0|C024|East||||False
+T015|2024-12-30|P105|Webcam|9|2899.0|C022|East||||False
+T007|2024-12-03|P102|Mouse|7|498.0|C012|East||||False
+T062|2024-12-24|P102|Mouse|9|618.0|C009|East||||False
+T049|2024-12-22|P109|Wireless Mouse Gaming|8|817.0|C007|East||||False
+T006|2024-12-11|P107|USB Cable|5|179.0|C007|East||||False
+T011|2024-12-03|P105|Webcam|4|2413.0|C013|East||||False
+T033|2024-12-30|P104|Monitor|9|14591.0|C023|East||||False
+T058|2024-12-07|P109|Wireless Mouse Gaming|9|1043.0|C005|East||||False
+T029|2024-12-11|P110|Laptop Charger|8|1539.0|C004|East||||False
+T070|2024-12-07|P106|Headphones|4|6463.0|C004|East||||False
+T054|2024-12-03|P110|Laptop Charger 65W|7|2846.0|C019|East||||False
+T012|2024-12-21|P108|External Hard Drive|6|4332.0|C012|East||||False
+T025|2024-12-14|P105|Webcam|3|3858.0|C001|East||||False
+T016|2024-12-08|P101|Laptop|1|65673.0|C013|East||||False
+T009|2024-12-03|P107|USB Cable|9|250.0|C027|East||||False

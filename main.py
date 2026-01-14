@@ -5,6 +5,7 @@ from utils.api_handler import *
 from datetime import datetime
 import os
 
+
 def main():
     try:
         print("=" * 40)
