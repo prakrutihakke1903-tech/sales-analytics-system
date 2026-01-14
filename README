@@ -189,7 +189,7 @@ data/enriched_sales_data.txt
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/prakrutihakke1903-tech/sales-analytics-system.git
+git clone https://github.com/your-username/sales-analytics-system.git
 cd sales-analytics-system
 ```
 
@@ -255,4 +255,6 @@ requests
 * REST API integration
 * Business-focused analytics & reporting
 * Robust error handling
+
+---
 
