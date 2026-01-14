@@ -6,16 +6,19 @@ The “Sales Analytics System” is a Python-based data analytics application de
 
 This system demonstrates practical usage of:
 
+```
 * File handling with encoding issues
 * Data cleaning and validation
 * Sales analytics using Python data structures
 * API integration (DummyJSON)
 * Report generation for business decision-making
 * Modular, production-style Python project structure
+```
 
+---
 
 🧠 Key Features
-
+```
  ✔ Handles non-UTF-8 encoded files
  ✔ Cleans messy transactional data
  ✔ Validates records using strict business rules
@@ -23,10 +26,13 @@ This system demonstrates practical usage of:
  ✔ Integrates with DummyJSON Products API
  ✔ Generates comprehensive business reports
  ✔ Fully modular and reusable codebase
+```
 
+---
 
 📁 Project Structure
 
+```
 sales-analytics-system/
 │
 ├── README.md
@@ -44,7 +50,8 @@ sales-analytics-system/
 │
 └── output/
     └── sales_report.txt
-
+```
+---
 
  📂 Dataset Description
 
